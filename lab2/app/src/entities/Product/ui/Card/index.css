@@ -1,0 +1,57 @@
+div.card {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+img.card-img {
+    border: 2px solid gray;
+    border-radius: 5%;
+    box-sizing: border-box;
+}
+
+div.card button {
+    border: 2px solid dimgray;
+    background-color: silver;
+    color: dimgray;
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+div.card button:hover {
+    background-color: lightgrey;
+}
+
+div.card button:active {
+    background-color: silver;
+}
+
+div.price {
+}
+
+div.price img {
+    height: 14px;
+}
+
+span.price {
+    font-size: 12pt;
+}
+
+span.oldprice {
+    margin-left: 5px;
+    text-decoration: line-through;
+    position: absolute;
+}
+
+
+@media screen and (min-width: 769px) {
+    div.card {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div.card {
+        width: 100%;
+    }
+}

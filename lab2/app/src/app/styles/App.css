@@ -1,0 +1,169 @@
+
+body {
+    margin: 0;
+}
+
+span {
+    font-family: monospace;
+}
+
+p {
+    font-family: monospace;
+}
+
+
+div.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    /*border-bottom: 1px solid black;*/
+    box-shadow: 0px 1px 2px 1px black;
+    height: 50px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div.navigation img {
+
+}
+
+div.footer {
+    display: flex;
+    align-items: center;
+
+    border-top: 1px solid black;
+
+    min-height: 60px;
+    height: 60px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+div.container span {
+    padding-left: 20px;
+}
+
+div.main {
+    /*height: 100px;*/
+
+    /*padding-left: 30px;
+    padding-right: 30px;*/
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+    height: 100%;
+
+    padding: 30px;
+    padding-bottom: 60px;
+}
+
+div.content {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+}
+
+
+div.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+div.left {
+    height: 100%;
+}
+
+div.left img {
+    height: 100%;
+}
+
+div.right {
+    display: flex;
+    height: 100%;
+}
+
+div.right img {
+    margin-left: 10px;
+    height: 100%;
+}
+
+div.bottom-navigation {
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+    bottom: 0;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+
+    border-top: 1px solid black;
+    background-color: white;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+
+    
+}
+
+div.navigation-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.navigation-item img {
+    height: 100%;
+}
+
+/* phone */
+@media screen and (max-width: 768px) {
+/*@media (orientation: portrait) {*/
+    div.left {
+        visibility: hidden;
+        display: none;
+    }
+
+    div.right {
+        visibility: hidden;
+        display: none;
+    }
+
+    div.navigation {
+        justify-content: center;
+    }
+
+    div.footer {
+        visibility: hidden;
+        display: none;
+    }
+
+    div.search {
+        max-width: none;
+    }
+}
+
+/* tablet and desktop */
+@media screen and (min-width: 769px) {
+    div.bottom-navigation {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+

@@ -1,0 +1,20 @@
+div.section {
+
+}
+
+p.section-name {
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+div.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+    div.row {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
